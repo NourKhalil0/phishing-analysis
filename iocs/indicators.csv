@@ -1,0 +1,22 @@
+type,indicator,confidence,context,first_seen,last_seen
+domain,microsofft-login[.]com,high,Primary phishing page,2025-09-01,2025-09-24
+domain,login-microsoftonline[.]net,high,Redirect hop,2025-09-03,2025-09-24
+domain,office365-verify[.]com,high,Credential exfil receiver,2025-09-04,2025-09-24
+domain,ms-secure-login[.]org,high,Backup phishing page,2025-09-05,2025-09-24
+domain,account-microsoft[.]live,medium,Redirect hop,2025-09-07,2025-09-21
+domain,msonline-auth[.]com,high,Credential exfil receiver,2025-09-08,2025-09-24
+domain,microsofft-sso[.]com,medium,Identified via crt.sh,2025-09-09,2025-09-20
+domain,ms365-auth[.]net,medium,Identified via crt.sh,2025-09-09,2025-09-20
+domain,login-ms-secure[.]com,medium,Identified via crt.sh,2025-09-10,2025-09-18
+ip,185.220.101.47,high,Phishing page hosting AS205100,2025-09-01,2025-09-24
+ip,185.220.101.52,high,Phishing page hosting AS205100,2025-09-01,2025-09-24
+ip,194.165.16.78,high,Exfil receiver AS47890,2025-09-04,2025-09-24
+ip,194.165.16.81,medium,Redirect hop AS47890,2025-09-07,2025-09-22
+ip,45.142.212.100,high,Backup hosting AS208091,2025-09-05,2025-09-24
+url,https://microsofft-login[.]com/signin,high,Phishing login page,2025-09-01,2025-09-24
+url,https://office365-verify[.]com/collect,high,Credential exfil endpoint,2025-09-04,2025-09-24
+email,no-reply@microsofft-login[.]com,high,Phishing email sender,2025-09-10,2025-09-24
+email,support@ms-secure-login[.]org,medium,Phishing email sender,2025-09-12,2025-09-20
+hash,a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0,high,Phishing kit ZIP (SHA256),2025-09-01,2025-09-01
+hash,f1e2d3c4b5a6978869504132241516071809,medium,Credential logger PHP (MD5),2025-09-01,2025-09-01
+hash,9988776655443322110099887766554433221100,medium,Redirect script (MD5),2025-09-03,2025-09-03
